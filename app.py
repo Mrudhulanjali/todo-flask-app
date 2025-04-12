@@ -8,7 +8,7 @@ app.secret_key = "your_secret_key"
 bcrypt = Bcrypt(app)
 import os
 
-app.config["MONGO_URI"] = os.environ.get("MONGO_URI", "mongodb://localhost:27017/todoApp")
+app.config["MONGO_URI"] = os.environ.get("MONGO_URI", "mongodb+srv://todouser:todoPass123@cluster0.omakqvn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 mongo = PyMongo(app)
 
